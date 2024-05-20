@@ -2,41 +2,285 @@ body {
 	background-color: #424242;
 	color: #dddddd;
 	overflow: hidden;
-	}
+	height: fit-content;
+	width: 100%;
+	margin: 0;
+}
 
 h1 {
 	text-align: center;
 	text-decoration: underline;
 	font-weight: 1000;
-	}
+}
+
+button {
+	text-align: centre;
+	font-size: 16px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
 
 .icon {
 	height: 11px;
 	width: 11px;
-	}
+}
 
 .container {
 	padding: 2px 16px;
 	background-color: white;
 	color: black;
-	}
+}
 
 .card {
 	box-shadow: 0 4px 8px 0 rgba(250, 249, 249, 0.473);
 	transition: 0.3s;
 	width: 30%;
 	margin: 25px auto;
-	}
+}
 
 .card:hover {
 	box-shadow: 0 8px 16px 0 rgba(250, 249, 249, 0.473);
-	}
+}
 
 .project-showcase {
 	display: inline-flex;
 	width: 100vw;
+}
+
+.error-msg {
+
+	a:link,
+	a:visited,
+	a:hover,
+	a:active {
+		color: #93ccea;
+		text-decoration: none
+	}
+}
+
+.safety-button {
+	background-color: cornflowerblue;
+	color: #dddddd;
+
+	a:link,
+	a:visited,
+	a:hover,
+	a:active {
+		color: #dddddd;
+		text-decoration: none
+	}
+}
+
+.advanced {
+	color: #dddddd;
+
+	a:link,
+	a:visited,
+	a:hover,
+	a:active {
+		color: #424242;
+		text-decoration: none
+	}
+}
+
+.main-container {
+	background-color: white;
+
+	display: inline-flex;
+	height: 100%;
+
+	.container {
+		width: 50vw;
 	}
 
-.blue {
-	color: cornflowerblue;
+	.left-payment {
+		background: linear-gradient(to right, rgb(255, 255, 255) 40%, rgb(249, 249, 249) 93%, rgb(240, 240, 240) 100%);
+		background-size: 100%;
 	}
+
+	.logo {
+		width: 150px;
+	}
+
+	.content1 {
+		margin-top: 15%;
+		margin-left: auto;
+		margin-right: auto;
+		width: 60%;
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+	td {
+		line-height: 50px;
+	}
+
+	.price {
+		text-align: right;
+	}
+
+	.line {
+		border-top: 1px solid #707070;
+		;
+	}
+
+	.content2 {
+		width: 60%;
+		margin-top: 15%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	input, .input {
+		width: 100%;
+		height: 40px;
+		border: 1px solid #969696;
+		border-radius: 5px;
+		padding-left: 10px;
+		box-sizing: border-box;
+		font-family: "Poppins", sans-serif;
+		font-weight: 500;
+		font-size: 15px;
+	}
+
+	input:focus, .input:focus {
+		outline: none;
+	}
+
+	.cvc-container {
+		display: flex;
+	}
+
+	.cvc-container input {
+		width: 50%;
+	}
+
+	.label {
+		margin-bottom: 5px;
+		margin-top: 25px;
+	}
+
+	.btn {
+		margin-top: 25px;
+		background-color: #1c5592;
+		color: white;
+		border: none;
+		width: 100%;
+		height: 40px;
+		border-radius: 5px;
+		box-sizing: border-box;
+		font-family: "Poppins", sans-serif;
+		font-weight: 700;
+		font-size: 17.5px;
+		text-align: center;
+
+	}
+
+	.btn:active {
+		background-color: #377dc8;
+
+	}
+
+	.btn:hover {
+		cursor: pointer;
+	}
+
+	p, h1, h3, td {
+		font-family: "Poppins", sans-serif;
+	}
+
+	p {
+		font-weight: 500;
+		font-size: 17.5px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+}
+
+.nav-bar {
+	@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+	nav a {
+		text-decoration: none;
+	}
+
+	nav {
+		position: sticky;
+		top: 0;
+		z-index: 1000;
+		font-family: "Exo", "sans-serif";
+		height: 75px;
+		background-color: #8d8d8d62;
+		width: 100%;
+	}
+
+	.container {
+		overflow: auto;
+	}
+
+	nav .primary-nav {
+		float: left;
+		width: 40%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		font-size: 25px;
+		font-weight: 700;
+		padding-left: 5%;
+	}
+
+	.primary-nav a {
+		color: #dddddd;
+		transition: 0.3s ease;
+	}
+
+	.primary-nav a:hover {
+		color: #969696b9;
+	}
+
+	nav .secondary-nav {
+		float: right;
+		padding: 0;
+		margin: 0;
+		width: 55%;
+		height: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.secondary-nav .menu-items {
+		list-style: none;
+	}
+
+	.secondary-nav a {
+		display: block;
+		padding: 1em 15px;
+		font-size: 20px;
+		font-weight: bold;
+		color: #dddddd;
+		text-decoration: none;
+		position: relative;
+		transition: all 0.5s ease;
+	}
+
+	.secondary-nav a:hover {
+		color: #969696b9;
+	}
+
+	p {
+		font-size: 50px;
+		font-family: "Exo", "sans-serif";
+		margin: 20px;
+	}
+}
